@@ -219,3 +219,15 @@ b-channel-info-bar.theaterMode {
 .hide-word-mentioned.hide-remove {
     display: none;
 }
+
+
+/*b-desktop-header.collapsed{
+    transform: translateY(1000px);
+}
+*/
+.input{
+    /*position: sticky!important;
+    top: 80%!important;
+    */
+    background-color:
+}
