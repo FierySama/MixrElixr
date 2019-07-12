@@ -117,7 +117,7 @@ $(() => {
 		}
 	}
 
-// function to be called to activate search bar instead of moving the search bar up, currently should activate only the top bar to be non transparent
+// function to be called to activate search bar instead of moving the search bar up, currently should activate only the top bar to be non transparent (FAILED so far)
 /*function toggleHomePageTopBar() {
 	var element = document.getElementById("b-desktop-header");
 	element.classList.toggle("collapsed");
@@ -127,19 +127,22 @@ $(() => {
 	function loadHomepage(){
 		log('Loading up settings for homepage');
 
-		///////Test code to always move search bar to top, hard coded. Unless we want the user to pick, which i doubt anyone wants it half way through the page
+		///////Test code to always move search bar to top, hard coded. Unless we want the user to pick, which i doubt anyone wants it half way through the page 
 		{
-			log('Search Bar code loaded');
+			log('Search Bar To Top code loaded');
 			$("b-desktop-header").addClass("collapsed");
-			//let searchBar = $(".layout-align-start-center");
+			//let searchBar = $(".layout-align-start-center"); (Making the top bar opaque worked)
 			let searchBar = $("b-browse-channel-header").children().first();
+			
+
+			/*
 			let b = 1;
-			if (b === 1) {
-				searchBar.offset(); = '-5000px';
+			if (b = 1){
+				searchBar.offset(); = '-5000px'; // making the search bar in mid of page
 				log('attempted bar styling')
 			} else {
 				log ('Nothing happened')
-			}
+			} */
 			
 		} 
 		/*window.onload = function(){

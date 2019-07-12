@@ -225,9 +225,25 @@ b-channel-info-bar.theaterMode {
     transform: translateY(1000px);
 }
 */
-.input{
+
+/* This is for moving the search bar on the home page.*/
+.layout-row.layout-align-start-center.row{
     /*position: sticky!important;
     top: 80%!important;
     */
-    background-color:
+    transform: translateY(-3550%);
 }
+
+/* This was supposed to move the filter options up, but this is too complex for me for now as the view auto scrolls down
+b-browse-filters.visible{
+    background-color: blue!important;
+    transform: translateY(-3550%);
+}
+
+
+// meant for homepage "top streams" to stop showing, doesn work
+.delve-title > h1:nth-of-type(0) {
+    display: none;
+}
+
+*/
