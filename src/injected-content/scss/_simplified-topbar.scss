@@ -1,0 +1,110 @@
+.elixr-simplified-topbar {
+    margin-right: 0 !important;
+}
+
+ .elixr-simplified-topbar > b-language-selector > button > span {
+    display: none;
+}
+
+ .elixr-simplified-topbar > b-language-selector > button > bui-icon:not(.icon-web) {
+    display: none;
+}
+
+
+ .elixr-simplified-topbar .icon-InternetWithController {
+    line-height: 1.2;
+}
+
+ b-notifications.elixr-simplified-topbar {
+    margin: 0 3px 0 5px !important;
+}
+
+ .elixr-simplified-topbar .flyout-menu {
+    background: #364558;
+    border-radius: 20px;
+    margin-right: 0 !important;
+}
+
+ b-embers-button.elixr-simplified-topbar > div > div {
+    margin-left: 0 !important;
+    border: none !important;
+    padding: none !important;
+}
+
+ b-embers-button.elixr-simplified-topbar > div > div:hover {
+    margin-left: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    opacity: 0.7;
+}
+
+ b-embers-button.elixr-simplified-topbar > div > div > div {
+    display: none;
+}
+
+ .logo.elixr-simplified-topbar {
+    margin: 0 0 0px 20px !important;
+    min-width: 0 !important;
+}
+
+ .logo.elixr-simplified-topbar > .full {
+    display: none !important;
+}
+
+ .logo.elixr-simplified-topbar > .merge {
+    display: block !important;
+}
+
+
+/* Dropdown */
+.elixr-dropbtn {
+  background-color: transparent;
+  color: #9fa4ae;
+  height: 60px;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.elixr-dropbtn:hover,
+.elixr-dropdown:hover > .elixr-dropbtn {
+  background-color: #43526d;
+  color: white;
+}
+
+.elixr-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.elixr-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #43526d;
+  min-width: 160px;
+  overflow: auto;
+  z-index: 1;
+}
+
+.elixr-dropdown-content a {
+  color: #9fa4ae;
+  padding: 12px 16px;
+  height: 50px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: 'Industrywf', sans-serif !important;
+}
+
+.elixr-dropdown a:hover {
+  color: white;
+}
+.elixr-dropdown-show {
+  display: block;
+}
+
+/* end dropdown */
+
+
+
