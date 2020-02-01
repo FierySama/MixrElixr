@@ -1,13 +1,13 @@
 language: node_js
 node_js:
-  - "10"
+  - "7"
 
 cache:
   directories:
     - "node_modules"
 
 install:
-  - npm install
+  - npm install eslint@4.19.1
 
 script:
-  - npm run lint
+  - ./node_modules/.bin/eslint .
