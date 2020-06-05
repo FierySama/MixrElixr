@@ -33,6 +33,7 @@ import generalOptions from './components/generalOptions.vue';
 import search from './components/search.vue';
 import customEmotesToggle from './components/customEmotesToggle.vue';
 import globalEmotesToggle from './components/globalEmotesToggle.vue';
+import preferredQualityToggle from './components/preferredQualityToggle.vue';
 
 // our mixins
 require('./mixins/friendFetcher');
@@ -65,6 +66,7 @@ Vue.component('sitewideOptions', sitewideOptions);
 Vue.component('search', search);
 Vue.component('customEmotesToggle', customEmotesToggle);
 Vue.component('globalEmotesToggle', globalEmotesToggle);
+Vue.component('preferredQualityToggle', preferredQualityToggle);
 
 // global bus we use for sending events across components.
 // eslint-disable-next-line no-unused-vars

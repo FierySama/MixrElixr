@@ -98,7 +98,8 @@ global.settingsStorage = {
                         hideStickers: false,
                         hideEmberMessages: false,
                         showSlowChatCooldownTimer: true,
-                        lightsOutTheaterMode: false
+                        lightsOutTheaterMode: false,
+                        preferredVideoQuality: ''
                     },
                     overrides: {}
                 },

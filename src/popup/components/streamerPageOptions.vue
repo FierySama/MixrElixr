@@ -37,6 +37,23 @@
                 label="Auto Theater Mode"
                 tooltip="Automatically enters Theater Mode when loading a channel."
             ></checkbox-toggle>
+            
+            <auto-quality-toggle :value.sync="autoPreferredQuality" @changed="saveSettings()"></auto-quality-toggle>
+            <div v-show="autoPreferredQuality" class="option-wrapper suboption">
+                <div style="padding-bottom: 5px;" class="option-title">
+                    Your Preferred Quality Option<option-tooltip
+                        name="qualityOptionPickerTitle"
+                        title="Your quality preference selected here will force Mixer's player to always start at that quality when the stream loads."
+                    ></option-tooltip>
+                </div>
+                 <b-form-select v-model="preferredVideoQuality" :options="qualityOptionsList" class="mb-3 option"></b-form-select>
+                <div style="padding-bottom: 5px;" class="option-title">
+                    Trusted Users<option-tooltip
+                        name="qualityOptionPicker"
+                        title="Your quality preference"
+                    ></option-tooltip>
+                </div>
+            
 
             <span class="setting-subcategory">Emotes</span>
             <custom-emotes-toggle

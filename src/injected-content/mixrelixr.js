@@ -912,6 +912,10 @@ $(() => {
             toggleTheaterMode();
         }
 
+        if(options.autoPreferredQuality) {
+            togglePreferredQuality();
+        }
+
         waitForElementAvailablity(ElementSelector.CHAT_CONTAINER).then(() => {
             applyChatSettings(streamerName);
         });
@@ -920,6 +924,14 @@ $(() => {
     function theaterModeEnabled() {
         return $('body').hasClass('theaterMode');
     }
+
+    function togglePreferredQuality() {
+        waitForElementAvailablity('button[aria-label="Qualities"]').then(button => {
+            button.click();
+            console.log("the qualities button has been clicked!!!!!!!!!!!!!!");
+        });
+    }
+
 
     function toggleTheaterMode() {
         let theaterElements = $(
